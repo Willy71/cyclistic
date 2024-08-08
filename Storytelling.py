@@ -17,18 +17,18 @@ st.set_page_config(
 
 #==========================================================================================================================
 # Code to measure audience with Google Analytics
-#ID_ANALYTICS = st.secrets["gtag"]["key_id"]
+ID_ANALYTICS = st.secrets["gtag"]["key_id"]
 
-#st_gtag(
-#    key="gtag_send_event_page_load",
-#    id=ID_ANALYTICS,
-#    event_name="app_main_page_load",
-#    params={
-#        "event_category": "page_load",
-#        "event_label": "main_page",
-#        "value": 1,
-#    },
-#)
+st_gtag(
+    key="gtag_send_event_page_load",
+    id=ID_ANALYTICS,
+    event_name="app_main_page_load",
+    params={
+        "event_category": "page_load",
+        "event_label": "main_page",
+        "value": 1,
+    },
+)
 #==========================================================================================================================
 
 st.write("#")
