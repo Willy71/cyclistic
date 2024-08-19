@@ -75,13 +75,12 @@ def photo_link(alt_text, img_url, link_url, img_width):
     '''
     st.markdown(markdown_code, unsafe_allow_html=True)
 
-st.write("#")
-
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
 center_text("Work made", 1, 'white')
 center_text("by", 1, 'white')
 center_text("Guillermo Cerato", 1, 'white')
 
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
                
 center_text("My social networks", 2, 'white')
 with st.container():    
@@ -107,10 +106,10 @@ with st.container():
         center_image("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/120px-WhatsApp.svg.png", 80)
         center_text_link("Whatsapp", "https://wa.me/5542991657847", 6, 'white')
 
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
 center_text_link("My portfolio", "https://guillermocerato.streamlit.app", 2, "blue")
 
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
 center_text('Send an email 💌', 1, 'white')
 
 with st.container():
@@ -141,7 +140,7 @@ with st.container():
             except Exception as e:
                 st.error(f"Failed to send email: {e}")
                
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
 with st.container():
     col51, col52, col53, col54 = st.columns([4,0.5,1,0.5])
     with col51:
@@ -157,4 +156,4 @@ with st.container():
     with col57:
         photo_link('', "https://i.postimg.cc/9Q3yg2th/python.png", 'https://www.python.org', 120)
             
-st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
+st.markdown("""<hr style="height:6px;border:none;color:#333;background-color:#e1e615;" /> """, unsafe_allow_html=True)
