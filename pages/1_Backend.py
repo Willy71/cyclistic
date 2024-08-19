@@ -49,8 +49,6 @@ def center_text_link(link_text, link_url, size, color):
     texto_html = f"<h{size} style='text-align: center; color: {color}'><a href='{link_url}' target='_blank'>{link_text}</a></h{size}>"
     st.markdown(texto_html, unsafe_allow_html=True)
 
-
-st.write("#")
 line(6, "#22c519")
 center_text("Complete tutorial of the practical work for the Google data analyst course provided by Coursera.", 2, "white")
 line(6, "#22c519")
