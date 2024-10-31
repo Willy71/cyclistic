@@ -72,12 +72,10 @@ def center_text_link(link_text, link_url, size, color):
 
 
 # Título de la aplicación
-center_picture(
-    'https://github.com/Willy71/Cyclistic_case_study/blob/main/pictures/cyclistic_logo.png?raw=true', 450)
-center_text("Cyclistic Bike-Share Chicago", 1, 'white')
+center_picture('https://github.com/Willy71/background/blob/main/picture/Coursera.png?raw=true', 450)
+#center_text("Cyclistic Bike-Share Chicago", 1, 'white')
 center_text("Bicycle Rental Analysis", 2, 'white')
-center_text(
-    "Case study done in Python for Coursera - by Guillermo Cerato", 3, 'white')
+center_text("Case study done in Python for Coursera - by Guillermo Cerato", 3, 'white')
 
 line(4, "#2a30e3")
 with st.container():
