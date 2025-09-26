@@ -1,3 +1,4 @@
+streamlit
 seaborn
 matplotlib
 altair
@@ -6,3 +7,6 @@ oauth2client
 pandas
 datetime
 numpy==1.26.4
+
+
+
