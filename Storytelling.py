@@ -7,6 +7,7 @@ import re
 import gspread
 from google.oauth2.service_account import Credentials
 from streamlit_gtag import st_gtag
+import os, json
 
 # Add a name to the page, icon and enlarge the screen
 st.set_page_config(
@@ -109,7 +110,7 @@ line(8, "#2a30e3")
 # =================================================================================================================================================
 # Conection to Google Sheets
 # Path to credentials file
-SERVICE_ACCOUNT_INFO = st.secrets["gsheets"]
+SERVICE_ACCOUNT_INFO = json.loads(os.environ["GSHEETS_CREDENTIALS"])
 
 # Necessary Scopes
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets",
@@ -464,3 +465,4 @@ st.text('')
 text_left("Call to action:", 4, "orange")
 text_left("The text implicitly encourages casual riders to consider membership.", 4, "white")
 line(8, "#2a30e3")
+
