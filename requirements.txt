@@ -7,7 +7,6 @@ oauth2client
 pandas
 datetime
 numpy==1.26.4
-os
 json
 
 
